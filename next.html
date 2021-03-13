@@ -1,0 +1,390 @@
+
+<!DOCTYPE HTML>
+<HTML>
+   <HEAD>
+      <TITLE>Playlist</TITLE>
+
+      <!-- link to the font awesome css file from the icons have been taken -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- link to the css file -->
+      <link rel="stylesheet" type="text/css" href="next.css">
+   </HEAD>
+   <BODY>
+
+
+<!-- music player controls start here -->
+<div style="height: 90px;background-color:  #202020;width: 100%;position: fixed;margin-top:89vh; z-index: 2;margin-left: -5px;margin-right: -5px;" id="music-controls">
+
+<hr color="#00FFFF" style="margin-top: -1px;">
+
+
+<div style="display: flex;width: 1000px;">
+<div class="q-card" style="background-color:#202020;margin-left: 65px;">
+<a onclick="myAudioFunction('a');">
+<img src="mexico.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Mexico </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; Karan Aujla </span>
+<i class="fa fa-heart m-clock" aria-hidden="true" style="color: white;"></i>
+<i class="fa fa-ban m-ban" aria-hidden="true" style="color: white;"></i>
+
+</div>
+
+
+<div style="width: 500px;background-color: #202020;display: flex;flex-wrap: wrap;margin-left: 350px;">
+
+
+<div style="height: 30px;width:100%;background-color: #202020;">
+
+<ul style="list-style-type: none;">
+
+	<li style="display: inline-block;margin-left: 120px;margin-right: 10px;color: white;">
+<i class="fa fa-random" aria-hidden="true"></i>
+	</li>
+
+	<li style="display: inline-block;margin-left: 10px;margin-right: 10px;color: white;">
+<i class="fa fa-step-backward" aria-hidden="true"></i>
+	</li>
+
+<li style="display: inline-block;margin-left: 10px;margin-right: 10px;color: white;">
+	<i class="fa fa-pause-circle" aria-hidden="true"></i>
+</li>
+
+<li style="display: inline-block;margin-left: 10px;margin-right: 10px;color: white;">
+	<i class="fa fa-step-forward" aria-hidden="true"></i>
+</li>
+
+<li style="display: inline-block;margin-left: 10px;margin-right: 10px;color: white;">
+	<i class="fa fa-youtube-play" aria-hidden="true"></i>
+</li>
+
+</ul>
+
+</div>
+
+<div style="height: 40px;width: 1000px;">
+<span style="font-family: Helvetica;
+	font-weight: 400;
+	font-size: 13px;
+	color: #eeeeee;margin-right: 6px;"> 1:32 </span>
+
+<hr color="#00FFFF" style="display: inline-block;width: 120px;height: 1px;margin-top: 10px;">
+<hr color="red" style="display: inline-block;width: 300px;height: 1px;margin-top: 10px;margin-left: -5px;">
+
+
+<span style="font-family: Helvetica;
+	font-weight: 400;
+	font-size: 13px;
+	color: #eeeeee;margin-left: 6px;"> 5:39 </span>
+</div>
+
+
+
+</div>
+
+<div style="height: 70px;width: 500px;background-color: #202020;margin-left: 200px;margin-top: 11px;">
+<i class="fa fa-volume-down" aria-hidden="true" style="color: white;margin-bottom: 5px;" ></i>
+<i class="fa fa-volume-up" aria-hidden="true" style="color: white;margin-bottom: 5px;"></i>
+<i class="fa fa-cog" aria-hidden="true" style="color: white;"></i>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+<!-- music player controls ends here -->
+   	<hr color="#00FFFF">
+
+
+
+<!-- here starts the playlist section -->
+<div style="display: flex;">
+
+
+
+<div style="width:21%; background-color:  black;margin-left: 60px;">
+
+	<span id="queue-text" "> Selected Playlist &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i> </span><br><br>
+
+<!-- Here I will add the queue, basically that is the aside section -->
+
+<div class="q-card">
+<a onclick="myAudioFunction('a');">
+<img src="mexico.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Mexico </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+
+<div class="q-card">
+<a onclick="myAudioFunction('e');">
+<img src="sakhiyan.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Sakhiyan </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('n');">
+<img src="baari.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Baari </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('o');">
+<img src="patakha.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Patakha </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('p');">
+<img src="sapne.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Sapne Re </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('q');">
+<img src="ammi.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Meri Pyari Ammi </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('r');">
+<img src="bombay.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; BombayTP </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('s');">
+<img src="vaste.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Vaste </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('a');">
+<img src="mexico.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Mexico </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<span style="margin-left: 150px;"> <i class="fa fa-angle-down" aria-hidden="true" style="color: white;"></i> </span>
+
+</div>
+
+
+<!-- here starts the art gallery section -->
+
+<div id="gallery" style="display: flex;flex-wrap: wrap;">
+
+<div class="wall">
+	<img src="w1.jpg">
+</div>
+
+<div class="wall">
+	<img src="w2.jpg">
+</div>
+
+<div class="wall">
+	<img src="w3.jpg">
+</div>
+
+<div class="wall" style="margin-top: 10px;">
+	<img src="w4.jpg">
+</div>
+
+
+<div class="wall" style="margin-top: -200px;">
+	<img src="w5.jpg">
+</div>
+
+<div class="wall" style="margin-top: -65px;">
+	<img src="w6.jpg">
+</div>
+
+
+</div>
+
+
+</div>
+
+   	</div>
+
+  <hr color="red">
+
+
+<!-- here starts the footer section -->
+<footer>
+
+   <div class="row" style="margin-top: -30px;">
+
+      <div class="twelve columns">
+
+         <ul class="social-links">
+             <li><a target="_blank" href="https://www.facebook.com/tanuja.sangwan.37/"><i class="fa fa-facebook" ></i></a></li>
+            <li><a target="_blank" href="https://github.com/Tanuja1306" ><i class="fa fa-github"></i></a></li>
+ 
+            <li><a target="_blank" href="https://www.linkedin.com/in/tanujakumaridtu/"><i class="fa fa-linkedin" target="_blank"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/tanujasangwan/"><i class="fa fa-instagram" target="_blank"></i></a></li>
+            <li><a target="_blank" href="https://www.quora.com/profile/Tanuja-Kumari-28" target="_blank"><i class="fa fa-quora"></i></a></li>
+       
+         </ul>
+
+         <ul class="copyright">
+            <li>&copy; Copyright 2021 Tanuja Sangwan</li>
+            <li>Handcrafted with  <span style="color:red;">&#x2764;</span> by <a href="http://tanujasangwan.xyz/" title="Styleshout" target="_blank" style="text-decoration: none;">Tanuja Sangwan</a></li>   
+         </ul>
+
+      </div>
+   </div>
+
+</footer> <!-- Footer End-->
+
+
+
+<!-- JSS code to make the songs play on click -->
+<div style="height: 50px;background-color: black;width: 100%;">
+
+
+</div>
+	
+
+<script>
+     var aAudio = new Audio('mexico.mp3');
+     var bAudio = new Audio('good.mp3');
+     var cAudio = new Audio('yaari.mp3');
+     var dAudio = new Audio('na-ja.mp3');
+     var eAudio = new Audio('sakhiyan.mp3');
+      var fAudio = new Audio('badnam.mp3');
+     var gAudio = new Audio('amplifier.mp3');
+     var hAudio = new Audio('gajban.mp3');
+     var iAudio = new Audio('yaar.mp3');
+     var jAudio = new Audio('chetak.mp3');
+     var kAudio = new Audio('desi.mp3');
+     var lAudio = new Audio('black.mp3');
+     var mAudio = new Audio('kisan.mp3');
+     var nAudio = new Audio('baari.mp3');
+      var oAudio = new Audio('patakha.mp3');
+       var pAudio = new Audio('sapne.mp3');
+        var qAudio = new Audio('ammi.mp3');
+        var rAudio = new Audio('bombay.mp3');
+       var sAudio = new Audio('vaste.mp3');
+     function myAudioFunction(letter) {
+         if(letter == 'a') {
+             if (aAudio.paused) aAudio.play();
+             else aAudio.pause();
+         } 
+         if(letter == 'b') {
+             if (bAudio.paused) bAudio.play();
+             else bAudio.pause();
+         }
+         if(letter == 'c') {
+             if (cAudio.paused) cAudio.play();
+             else cAudio.pause();
+         }
+         if(letter == 'd') {
+             if (dAudio.paused) dAudio.play();
+             else dAudio.pause();
+         }
+         if(letter == 'e') {
+             if (eAudio.paused) eAudio.play();
+             else eAudio.pause();
+         }
+         if(letter == 'f') {
+             if (fAudio.paused) fAudio.play();
+             else fAudio.pause();
+         }
+         if(letter == 'g') {
+             if (gAudio.paused) gAudio.play();
+             else gAudio.pause();
+         }
+          if(letter == 'h') {
+             if (hAudio.paused) hAudio.play();
+             else hAudio.pause();
+         }
+         if(letter == 'i') {
+             if (iAudio.paused) iAudio.play();
+             else iAudio.pause();
+         }
+         if(letter == 'j') {
+             if (jAudio.paused) jAudio.play();
+             else jAudio.pause();
+         }
+           if(letter == 'k') {
+             if (kAudio.paused) kAudio.play();
+             else kAudio.pause();
+         }
+         if(letter == 'l') {
+             if (lAudio.paused) lAudio.play();
+             else lAudio.pause();
+         }
+          if(letter == 'm') {
+             if (mAudio.paused) mAudio.play();
+             else mAudio.pause();
+         }
+         if(letter == 'n') {
+             if (nAudio.paused) nAudio.play();
+             else nAudio.pause();
+         }
+         if(letter == 'o') {
+             if (oAudio.paused) oAudio.play();
+             else oAudio.pause();
+         }
+          if(letter == 'p') {
+             if (pAudio.paused) pAudio.play();
+             else pAudio.pause();
+         }
+         if(letter == 'q') {
+             if (qAudio.paused) qAudio.play();
+             else qAudio.pause();
+         }
+         if(letter == 'r') {
+             if (rAudio.paused) rAudio.play();
+             else rAudio.pause();
+         }
+         if(letter == 's') {
+             if (sAudio.paused) sAudio.play();
+             else sAudio.pause();
+         }
+     }
+ </script>
+
+
+
+<!-- code ends here -->
+
+     
+   </BODY>
+</HTML>

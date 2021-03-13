@@ -1,0 +1,584 @@
+body
+{
+	background-color: black;
+}
+
+
+/*the navigation bar starts here*/
+nav div
+{   margin-top: -10px;
+	 margin-left: -10px;
+	width : 100vw;
+	height : 65px;
+	background-color: #202020;
+}
+
+#logo_image
+{  
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 50px;
+	height: 70px;
+	width: 70px;
+}
+
+#logo-name
+{ 
+	font-family: Helvetica;
+	font-weight: 300;
+	font-size: 23px;
+	color: #eeeeee;
+	top: 10px;
+	position: absolute;
+	margin-top: 0.35em;
+
+}
+#logo-name:hover
+{
+	color: #00FFFF;
+}
+#nav-bar
+{   position: absolute;
+	display: inline;
+	margin-left: 10rem;
+	margin-top: 1.5em;
+
+
+}
+#nav-bar li
+{
+	margin-right: 20px;
+display: inline;
+}
+
+.nav-list
+{font-family: Helvetica;
+	color:white;
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 15px;
+	letter-spacing: 1px;
+
+}
+
+.nav-list:hover
+{
+	color: #00FFFF;
+}
+
+#search-button
+{   display: inline;
+	position: absolute;
+	margin-left: 50rem;
+	margin-top: 12px;
+	width: 330px;
+	height:20px;
+	 border-radius: 5px;
+	background-color:  #232931;
+}
+
+#search-button-text
+{   position: relative;
+	font-weight: 300;
+	font-size: 15px;
+	font-family: Helvetica;
+	margin-left: 10px;
+	display: inline;
+	color: white;
+}
+
+#search-button-text:hover
+{
+	color: #00FFFF;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+#sign-in
+{position: absolute;
+	font-family: Helvetica;
+	color:white;
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-left: 73rem;
+	margin-top: 1.5em;
+}
+
+#sign-in:hover
+{
+	color: #00FFFF;
+}
+
+/*the navigation bar ends here*/
+
+
+/*the section starts here where personalised songs etc will be displayed*/
+#section-area
+{
+height: auto;
+width: 100%;
+margin-top: 50px;
+background-color:black;
+margin-left: 50px;
+
+}
+
+.image
+{  
+	width: 320px;
+	height: 220px;
+	background-color: #232931;
+	margin-top: 20px;
+	margin-right: 5px;
+	margin-left: 5px;
+
+	
+	
+}
+
+
+.image img
+{
+	width: 320px;
+	border-radius: 5px;
+	height: 220px;
+}
+
+.image img:hover {
+    -webkit-transform:scale(1.4); 
+    transform:scale(1.4);
+}
+
+#name1
+{ margin-left: 5px;
+    font-family: Helvetica;
+	color:white;
+	font-weight: 400;
+	font-size: 18px;
+	letter-spacing: 1px;
+
+}
+
+#name1:hover
+{
+	color: #00FFFF;
+}
+
+.song-card
+{
+	display: inline-block;
+	background-color:black;
+	width: 46%;
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 135px;
+	margin-top: 2px;
+
+}
+
+.mix-img
+{    margin-left: 20px;
+	margin-top: 8px;
+	height: 110px;
+	width: 110px;
+	border-radius: 5px;
+}
+
+.mix-title
+{
+	position: absolute;
+	margin-top: 45px;
+	font-family: Helvetica;
+	font-weight: 600;
+	font-size: 15px;
+	color: #eeeeee;
+
+}
+
+.mix-title:hover
+{
+	color: #00FFFF;
+}
+
+.mix-date
+{
+	position: absolute;
+	margin-top: 70px;
+	font-family: Helvetica;
+	font-weight: 200;
+	font-size: 12px;
+	color: #eeeeee;
+	
+}
+
+
+.mix-date:hover
+{
+	color: #00FFFF;
+}
+
+.mix-clock
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: 20px;
+	color: white;
+}
+
+.mix-time
+{
+	position: absolute;
+	margin-left: 298px;
+	font-family: Helvetica;
+	font-weight: 200;
+	font-size: 12px;
+	margin-top: 50px;
+	color: white;
+}
+
+
+.mix-time:hover
+{
+	color: #00FFFF;
+}
+
+.artist-photo
+{
+	height: 120px;
+	width: 120px;
+	margin-left: 30px;
+	margin-right: 15px;
+	background-color: black;
+}
+
+.photos
+{
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+
+}
+
+.artist-name
+{
+	color: white;
+	font-family: Helvetica;
+	font-weight: 400;
+	font-size: 12px;
+	margin-left: 28px;
+}
+
+
+.artist-name:hover
+{
+	color: #00FFFF;
+}
+
+.genre-image
+{
+	background-color: black;
+	height: 150px;
+	width: 280px;
+	margin-left: 28px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	 position: relative;
+  text-align: center;
+}
+
+.gen
+{   height: 150px;
+	border-radius: 5px;
+	width: 280px;
+
+
+}
+
+
+.gen:hover {
+    -webkit-transform:scale(1.2); 
+    transform:scale(1.2);
+}
+
+
+.gen-text
+{    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	color: white;
+	font-family: Helvetica;
+	font-weight: 400;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+
+.gen-text:hover
+{
+	color: #00FFFF;
+}
+
+.hindi
+{
+	height: 120px;
+	width: 120px;
+	border-radius: 3px;
+
+}
+
+.hindi:hover {
+    -webkit-transform:scale(1.2); 
+    transform:scale(1.2);
+}
+
+#quotes
+{
+	background-color: black
+	width: 100%;
+	height: auto;
+
+}
+
+.row {
+   width: 96%;
+   max-width: 1020px;
+   margin: 0 auto;
+}
+/* fixed width for IE8 */
+.ie .row { width: 1000px ; }
+
+.narrow .row { max-width: 980px; }
+
+.row .row { width: auto; max-width: none; margin: 0 -20px; }
+
+/* row clearing */
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
+
+footer {
+   padding-top: 48px;
+   margin-bottom: 48px;
+   color: #303030;
+   font-size: 14px;
+   text-align: center;
+   position: relative;
+}
+
+footer a, footer a:visited { color: #525252; }
+footer a:hover, footer a:focus { color: #fff; }
+
+/* copyright */
+footer .copyright {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+	font-weight: 400;
+	font-size: 14px;
+ }
+footer .copyright li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+}
+.ie footer .copyright li {
+   display: inline;
+}
+footer .copyright li:before {
+    content: "\2022";
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #095153;
+}
+footer .copyright  li:first-child:before {
+    display: none;
+}
+
+/* social links */
+footer .social-links {
+   margin: 18px 0 30px 0;
+   padding: 0;
+   font-size: 30px;
+}
+footer .social-links li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 42px;
+    color: #F06000;
+}
+
+footer .social-links li:first-child { margin-left: 0; }
+
+
+/*the queue starts here*/
+#queue-text
+{ font-family: Helvetica;
+	font-weight: 400;
+	font-size: 20px;
+	color: white;
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 20px;
+
+}
+
+
+#queue-text:hover
+{
+	color: #00FFFF;
+}
+
+
+
+.q-card
+{
+	display: inline-block;
+	background-color:black;
+	width: 100%;
+	height: 80px;
+	margin-top: 2px;
+
+}
+
+.q-img
+{    margin-left: 20px;
+	margin-top: 8px;
+	width: 60px;
+	height: 60px;
+	border-radius: 5px;
+}
+
+
+.q-img:hover {
+    -webkit-transform:scale(1.2); 
+    transform:scale(1.2);
+}
+
+
+.q-title
+{
+	position: absolute;
+	margin-top: 20px;
+	font-family: Helvetica;
+	font-weight: 600;
+	font-size: 12px;
+	color: #eeeeee;
+
+}
+
+.q-date
+{
+	position: absolute;
+	margin-top: 40px;
+	font-family: Helvetica;
+	font-weight: 200;
+	font-size: 10px;
+	color: #eeeeee;
+	
+}
+
+.q-title:hover
+{
+	color: #00FFFF;
+}
+
+.q-date:hover
+{
+	color: #00FFFF;
+}
+.q-clock
+{
+	position: absolute;
+	margin-left: 170px;
+	margin-top: 25px;
+	color: white;
+}
+
+
+ /*the queue ends here*/
+
+/*the music controls starts here*/
+.m-clock
+{
+	position: absolute;
+	margin-left: 80px;
+	margin-top: 25px;
+	color: white;
+}
+
+
+.m-ban
+{
+	position: absolute;
+	margin-left: 105px;
+	margin-top: 25px;
+	color: white;
+}
+
+/*the music controls ends here*/
+
+
+
+/*media query to make it respondive*/
+
+@media screen and (max-width: 1200px) {
+  
+#queue-area
+{
+	display: none;
+	width: 0px;
+}
+
+main div
+{
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+#music-controls
+{display: none;}
+
+
+.song-card
+{
+	width:50%;
+}
+
+body
+{
+	margin-left: -5%;
+
+}
+
+#nav-bar
+{display: none;}
+
+#search-button
+{
+	display: none;
+}
+
+#sign-in
+{
+	display: none;
+}
+
+
+}
+
+/*media query ends here*/
+

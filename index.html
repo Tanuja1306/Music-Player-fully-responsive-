@@ -1,0 +1,849 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<!-- Link to font awesome for icons used in the project -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- link to the css file used in the project -->
+	<link rel="stylesheet" type="text/css" href="music.css">
+
+
+<!-- meta code for making the site resonsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- title of the project -->
+	<TITLE> Music Player </TITLE>
+	
+</HEAD>
+
+
+<!-- the body starts here -->
+<BODY>
+
+
+<!-- music player controls start here -->
+<div style="height: 90px;background-color:  #202020;width: 100%;position: fixed;margin-top:89vh; z-index: 2;margin-left: -5px;margin-right: -5px;" id="music-controls">
+
+<hr color="#00FFFF" style="margin-top: -1px;">
+
+
+<div style="display: flex;width: 1000px;">
+<div class="q-card" style="background-color:#202020;margin-left: 65px;">
+<a onclick="myAudioFunction('a');">
+<img src="mexico.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Mexico </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; Karan Aujla </span>
+<i class="fa fa-heart m-clock" aria-hidden="true" style="color: white;"></i>
+<i class="fa fa-ban m-ban" aria-hidden="true" style="color: white;"></i>
+
+</div>
+
+
+<div style="width: 500px;background-color: #202020;display: flex;flex-wrap: wrap;margin-left: 350px;">
+
+
+<div style="height: 30px;width:100%;background-color: #202020;">
+
+<ul style="list-style-type: none;">
+
+	<li style="display: inline-block;margin-left: 120px;margin-right: 10px;color: white;">
+<i class="fa fa-random" aria-hidden="true"></i>
+	</li>
+
+	<li style="display: inline-block;margin-left: 10px;margin-right: 10px;color: white;">
+<i class="fa fa-step-backward" aria-hidden="true"></i>
+	</li>
+
+<li style="display: inline-block;margin-left: 10px;margin-right: 10px;color: white;">
+	<i class="fa fa-pause-circle" aria-hidden="true"></i>
+</li>
+
+<li style="display: inline-block;margin-left: 10px;margin-right: 10px;color: white;">
+	<i class="fa fa-step-forward" aria-hidden="true"></i>
+</li>
+
+<li style="display: inline-block;margin-left: 10px;margin-right: 10px;color: white;">
+	<i class="fa fa-youtube-play" aria-hidden="true"></i>
+</li>
+
+</ul>
+
+</div>
+
+<div style="height: 40px;width: 1000px;">
+<span style="font-family: Helvetica;
+	font-weight: 400;
+	font-size: 13px;
+	color: #eeeeee;margin-right: 6px;"> 1:32 </span>
+
+<hr color="#00FFFF" style="display: inline-block;width: 120px;height: 1px;margin-top: 10px;">
+<hr color="red" style="display: inline-block;width: 300px;height: 1px;margin-top: 10px;margin-left: -5px;">
+
+
+<span style="font-family: Helvetica;
+	font-weight: 400;
+	font-size: 13px;
+	color: #eeeeee;margin-left: 6px;"> 5:39 </span>
+</div>
+
+
+
+</div>
+
+<div style="height: 70px;width: 500px;background-color: #202020;margin-left: 200px;margin-top: 11px;">
+<i class="fa fa-volume-down" aria-hidden="true" style="color: white;margin-bottom: 5px;" ></i>
+<i class="fa fa-volume-up" aria-hidden="true" style="color: white;margin-bottom: 5px;"></i>
+<i class="fa fa-cog" aria-hidden="true" style="color: white;"></i>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- music player controls ends here -->
+ <!-- This is the navigation bar -->
+
+
+ <!-- this is the navigation bar that carries the logo,and home , about etc sections -->
+	<nav>
+<div> 
+
+<img src="music app icon.png" id="logo_image"> 
+
+<span id="logo-name"><span style="color:#ff0000;">SANGU</span>MUSIC</span>
+
+<ul id="nav-bar">
+	<li><a href="#" class="nav-list">HOME</a></li>
+	<li><a href="" class="nav-list">MY MUSIC</a></li>
+	<li><a target="_blank" href="http://tanujasangwan.xyz/" class="nav-list">ABOUT ME</a></li>
+</ul>
+
+<!-- search button it is -->
+<div id="search-button" style="padding: 10px;">
+	
+	<a target="_blank" href="https://docs.google.com/document/d/1RncQ7w2REU5jgr-x_kyuIAHnJDa_vhqFNKi3zlfNQ5Q/edit?usp=sharing">
+	<p id="search-button-text">
+		<i class="fa fa-search" aria-hidden="true"></i> &nbsp;
+	Search for your best-loved music!
+</p>
+</a>
+</div>
+
+<a target="_blank" href="https://docs.google.com/document/d/16hPT3m2Skzm4E_K_FizBqzy_ZR57YWnscvkXA1a0KJI/edit?usp=sharing">
+<span id="sign-in"> SIGN IN &nbsp;<i class="fa fa-sign-in" aria-hidden="true"></i></i></span>
+</a>
+
+</div>
+<hr color="#00FFFF" style="margin-top: -1px; width: 100vw; margin-left: -6px;">
+</nav>
+
+
+<!-- navigation bar ends here -->
+
+<!-- this the section element of my web page -->
+
+<main>
+
+	<div style="display: flex;">
+
+<section>
+<div id="section-area">
+
+	<div style="display: flex">
+
+
+     <div class="image"> 
+<a target="_blank" href="next.html">
+     	<img src="sad.png"> 
+     </a>
+
+     </div>
+      <div class="image"> <a target="_blank" href="next.html"><img src="weekly.png"> </a></div>
+       <div class="image"><a target="_blank" href="next.html"> <img src="international.png"></a> </div>
+
+	</div>
+<br>
+<hr color="red" width="95%" style="margin-left: 0px;margin-right: 20px;"  >
+
+
+<!-- here starts the mixes section -->
+<p id="name1"> Your Personalised Mixes </p>
+
+<div class="song-card">
+<a onclick="myAudioFunction('a');">
+<img src="mexico.jpg" class="mix-img">
+</a>
+<span class="mix-title">&nbsp; &nbsp; Mexico </span>
+<span class="mix-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-list mix-clock" aria-hidden="true" style="color: white"></i>
+<span class="mix-time">5:45</span>
+</div>
+
+<div class="song-card">
+<a onclick="myAudioFunction('e');">
+<img src="sakhiyan.jpg" class="mix-img">
+</a>
+<span class="mix-title">&nbsp; &nbsp; Sakhiyan </span>
+<span class="mix-date">&nbsp; &nbsp;&nbsp; JAN 2,2021 </span>
+<i class="fa fa-list mix-clock" aria-hidden="true" style="color: white"></i>
+<span class="mix-time">4:45</span>
+</div>
+
+<div class="song-card">
+<a onclick="myAudioFunction('p');">
+	<img src="sapne.jpg" class="mix-img">
+</a>
+<span class="mix-title">&nbsp; &nbsp; Sapne Re </span>
+<span class="mix-date">&nbsp; &nbsp;&nbsp; NOV 21,2020 </span>
+<i class="fa fa-list mix-clock" aria-hidden="true" style="color: white"></i>
+<span class="mix-time">5:45</span>
+</div>
+<div class="song-card">
+<a onclick="myAudioFunction('q');">
+<img src="ammi.jpg" class="mix-img">
+</a>
+<span class="mix-title">&nbsp; &nbsp; Meri Pyaari Ammi </span>
+<span class="mix-date">&nbsp; &nbsp;&nbsp; OCT 31,2019 </span>
+<i class="fa fa-list mix-clock" aria-hidden="true" style="color: white"></i>
+<span class="mix-time">3:45</span>
+</div>
+<br><br>
+<hr color="red" width="95%" style="margin-left: 0px;margin-right: 20px;"  >
+
+<!-- the mixes section ends here -->
+
+
+
+
+<!-- popular artist area -->
+<p id="name1"> Top Artists </p>
+
+<div style="display: flex;">
+
+	<div class="artist-photo">
+		<a target="_blank" href="next.html">
+		<img src="photo1.jpg" class="photos">
+	</a>
+			<span class="artist-name"> Isla Sophia </span>
+	</div>
+	<div class="artist-photo">
+<a target="_blank" href="next.html">
+		<img src="photo2.jpg" class="photos">
+	</a>
+		<span class="artist-name"> Amelia Emma </span>
+	</div>
+	<div class="artist-photo">
+<a target="_blank" href="next.html">
+		<img src="photo3.jpg" class="photos">
+	</a>
+<span class="artist-name"> Thomas Joe </span>
+	</div>
+    <div class="artist-photo">
+<a target="_blank" href="next.html">
+    	<img src="photo4.jpg" class="photos">
+    </a>
+<span class="artist-name"> Emily Isabella </span>
+    </div>
+	<div class="artist-photo">
+<a target="_blank" href="next.html">
+		<img src="photo5.jpg" class="photos">
+	</a>
+<span class="artist-name"> Lily	Michelle </span>
+	</div>
+	<div class="artist-photo">
+<a target="_blank" href="next.html">
+		<img src="photo6.jpg" class="photos">
+	</a>
+<span class="artist-name"> William	Damian </span>
+	</div>
+</div>
+<!-- Popular Artist ends here -->
+<br><br>
+<hr color="red" width="95%" style="margin-left: 0px;margin-right: 20px;"  >
+<br>
+<!-- genres of music images -->
+
+<div style="display: flex;">
+
+<div class="genre-image"> 
+<img src="gen1.jpg" class="gen">
+<span class="gen-text"> Road Trip </span>
+</div>
+<div class="genre-image"><img src="gen2.jpg" class="gen">
+<span class="gen-text"> Party </span>
+</div>
+<div class="genre-image"><img src="gen3.jpg" class="gen">
+<span class="gen-text"> Study Time </span>
+</div>
+
+</div>
+
+<div style="display: flex;">
+
+<div class="genre-image"><img src="gen4.jpg" class="gen">
+<span class="gen-text"> Calm </span>
+</div>
+<div class="genre-image"><img src="gen5.jpg" class="gen">
+<span class="gen-text"> Electronic </span>
+</div>
+<div class="genre-image"><img src="gen6.jpg" class="gen">
+<span class="gen-text"> Rock Band </span>
+</div>
+
+</div>
+
+<hr color="red" width="95%" style="margin-left: 0px;margin-right: 20px;"  >
+
+<!-- here starts the next section, the hindi playlist -->
+<p id="name1"> Hindi Top Hits </p>
+
+<div style="display: flex;">
+
+	<div class="artist-photo">
+		<a onclick="myAudioFunction('n');">
+		<img src="baari.jpg" class="hindi">
+		</a>
+			<span class="artist-name"> Baari </span>
+	</div>
+
+	<div class="artist-photo">
+<a onclick="myAudioFunction('o');">
+		<img src="patakha.jpg" class="hindi">
+	</a>
+
+		<span class="artist-name"> Patakha Guddi </span>
+	</div>
+
+	<div class="artist-photo">
+<a onclick="myAudioFunction('p');">
+		<img src="sapne.jpg" class="hindi">
+	</a>
+<span class="artist-name"> Sapne Re </span>
+	</div>
+
+    <div class="artist-photo">
+<a onclick="myAudioFunction('q');">
+    	<img src="ammi.jpg" class="hindi">
+</a>
+<span class="artist-name"> Pyaari Ammi </span>
+    </div>
+
+	<div class="artist-photo">
+		<a onclick="myAudioFunction('r');">
+		<img src="bombay.jpg" class="hindi">
+	</a>
+
+<span class="artist-name"> BombayTP </span>
+	</div>
+
+
+	<div class="artist-photo">
+<a onclick="myAudioFunction('s');">
+		<img src="vaste.jpg" class="hindi">
+</a>
+<span class="artist-name"> Vaste </span>
+	</div>
+</div>
+
+<br><br>
+<hr color="red" width="95%" style="margin-left: 0px;margin-right: 20px;"  >
+
+<!-- here ends the hindi playlist section -->
+
+<!-- here starts the next section for flex div, the punjabi playlist -->
+<p id="name1"> Punjabi Top Hits </p>
+
+<div style="display: flex;">
+
+	<div class="artist-photo">
+		<a onclick="myAudioFunction('a');">
+		<img src="mexico.jpg" class="hindi">
+			<span class="artist-name"> Mexico </span>
+		</a>
+	</div>
+	<div class="artist-photo">
+		<a onclick="myAudioFunction('c');">
+		<img src="yaari.jpg" class="hindi">
+	</a>
+		<span class="artist-name"> Yaari Tod Deni </span>
+	</div>
+
+	<div class="artist-photo">
+		<a onclick="myAudioFunction('d');">
+		<img src="na-ja.jpg" class="hindi">
+	</a>
+<span class="artist-name"> Na Ja </span>
+	</div>
+    <div class="artist-photo">
+<a onclick="myAudioFunction('e');">
+    	<img src="sakhiyan.jpg" class="hindi">
+    	</a>
+<span class="artist-name"> Sakhiyan </span>
+    </div>
+	<div class="artist-photo">
+		<a onclick="myAudioFunction('f');">
+		<img src="badnam.jpg" class="hindi">
+</a>
+<span class="artist-name"> Daru Badnam </span>
+	</div>
+	<div class="artist-photo">
+	<a onclick="myAudioFunction('g');">
+		<img src="amplifier.jpg" class="hindi">
+			</a>
+<span class="artist-name">Amplifier</span>
+	</div>
+</div>
+<br><br>
+<hr color="red" width="95%" style="margin-left: 0px;margin-right: 20px;"  >
+
+<!-- punjabi playlist ends here -->
+
+
+<!-- here starts the next section for songs (a flex div) -->
+<p id="name1"> Haryanvi Top Hits </p>
+
+<div style="display: flex;">
+
+	<div class="artist-photo">
+<a onclick="myAudioFunction('h');">
+		<img src="gajban.jpg" class="hindi">
+</a>
+			<span class="artist-name"> Gajban </span>
+	</div>
+
+	<div class="artist-photo">
+<a onclick="myAudioFunction('i');">
+		<img src="yaar.jpg" class="hindi">
+</a>
+		<span class="artist-name"> Yaar Haryana Te </span>
+	</div>
+
+	<div class="artist-photo">
+<a onclick="myAudioFunction('j');">
+		<img src="chetak.jpg" class="hindi">
+		</a>
+<span class="artist-name"> Chetak </span>
+	</div>
+
+    <div class="artist-photo">
+<a onclick="myAudioFunction('k');">
+    	<img src="desi.jpg" class="hindi">
+    </a>
+<span class="artist-name"> Desi-Desi </span>
+    </div>
+
+	<div class="artist-photo">
+<a onclick="myAudioFunction('l');">
+		<img src="black.jpg" class="hindi">
+	</a>
+<span class="artist-name"> Z Black </span>
+	</div>
+	
+	<div class="artist-photo">
+<a onclick="myAudioFunction('m');">
+		<img src="kisan.jpg" class="hindi">
+	</a>
+<span class="artist-name"> Kadar Kisan Ki </span>
+	</div>
+</div>
+<br><br>
+<!-- the haryanvi playlist ends here -->
+</div>
+</section>
+
+
+<!-- here starts the ASIDE section , the queue on the right -->
+<div style="width:21%; background-color: black;margin-left: 60px;margin-top: 60px;" id="queue-area">
+
+	<span id="queue-text"> Queue &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i> </span><br><br>
+
+<!-- Here I will add the queue, basically that is the aside section -->
+
+<div class="q-card">
+<a onclick="myAudioFunction('a');">
+<img src="mexico.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Mexico </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+
+<div class="q-card">
+<a onclick="myAudioFunction('e');">
+<img src="sakhiyan.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Sakhiyan </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('n');">
+<img src="baari.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Baari </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('o');">
+<img src="patakha.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Patakha </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('p');">
+<img src="sapne.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Sapne Re </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('q');">
+<img src="ammi.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Meri Pyari Ammi </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('r');">
+<img src="bombay.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; BombayTP </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('s');">
+<img src="vaste.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Vaste </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('a');">
+<img src="mexico.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Mexico </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('c');">
+<img src="yaari.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Yaari </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('d');">
+<img src="na-ja.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Na-Ja </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('e');">
+<img src="sakhiyan.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Sakhiyan </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('f');">
+<img src="badnam.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Daru Badnam </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('g');">
+<img src="amplifier.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Amplifier </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('h');">
+<img src="gajban.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Gajban </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('i');">
+<img src="yaar.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Yaar Haryana Te </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('j');">
+<img src="chetak.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Chetak </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('k');">
+<img src="desi.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Desi-Desi </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('l');">
+<img src="black.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Z Black </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('m');">
+<img src="kisan.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Kadar Kisan Ki </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('a');">
+<img src="mexico.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Mexico </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<div class="q-card">
+<a onclick="myAudioFunction('n');">
+<img src="baari.jpg" class="q-img">
+</a>
+<span class="q-title">&nbsp; &nbsp; Baari </span>
+<span class="q-date">&nbsp; &nbsp;&nbsp; MAR 11,2021 </span>
+<i class="fa fa-heart q-clock" aria-hidden="true" style="color: white"></i>
+</div>
+
+<span style="margin-left: 150px;"> <i class="fa fa-angle-down" aria-hidden="true" style="color: white;"></i> </span>
+
+
+</div>
+
+
+
+
+</div> 
+
+
+
+
+
+
+<!-- this is the photo wall gallery section -->
+
+<hr color="red">
+<br>
+<div id="quotes" style="display: flex; flex-wrap: wrap;background-image: url(star.jpg);">
+
+	<div><img src="q1.jpg" style="height: auto;width: 300px; margin-right: 20px;margin-left: 20px; border-radius: 5px;margin-left: 30px;"></div>
+	<div><img src="q2.jpg" style="height: auto;width: 300px;margin-right: 20px;margin-left: 20px; border-radius: 5px;"></div>
+	<div><img src="q3.jpg" style="height: auto;width: 300px;margin-right: 20px;margin-left: 20px;border-radius: 5px;"></div>
+	<div><img src="q4.jpg" style="height: auto;width: 300px;margin-right: 20px;margin-left: 20px;border-radius: 5px;"></div>
+	<div><img src="q5.jpg" style="height: auto;width: 300px;margin-right: 20px;margin-left: 20px; margin-top:-330px;border-radius: 5px;margin-left: 30px;"></div>
+	<div><img src="q6.jpg" style="height: 100px;width: 300px;margin-right: 20px;margin-left: 20px; margin-top: 20px;border-radius: 5px;"></div>
+	<div><img src="q7.jpg" style="height: auto;width: 300px;margin-right: 20px;margin-left: 20px;margin-top:-305px;border-radius: 5px;"></div>
+	<div><img src="q8.jpg" style="height: auto;width: 300px;margin-right: 20px;margin-left: 20px;margin-top:-60px;border-radius: 5px;"></div>
+
+</div>
+<br>
+<hr color="red">
+
+
+<!-- this is the footer section -->
+<footer>
+
+   <div class="row" style="margin-top: -30px;">
+
+      <div class="twelve columns">
+
+         <ul class="social-links">
+             <li><a target="_blank" href="https://www.facebook.com/tanuja.sangwan.37/"><i class="fa fa-facebook" ></i></a></li>
+            <li><a target="_blank" href="https://github.com/Tanuja1306" ><i class="fa fa-github"></i></a></li>
+ 
+            <li><a target="_blank" href="https://www.linkedin.com/in/tanujakumaridtu/"><i class="fa fa-linkedin" target="_blank"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/tanujasangwan/"><i class="fa fa-instagram" target="_blank"></i></a></li>
+            <li><a target="_blank" href="https://www.quora.com/profile/Tanuja-Kumari-28" target="_blank"><i class="fa fa-quora"></i></a></li>
+       
+         </ul>
+
+         <ul class="copyright">
+            <li>&copy; Copyright 2021 Tanuja Sangwan</li>
+            <li>Designed with  <span style="color:red;">&#x2764;</span> by <a href="http://tanujasangwan.xyz/" title="Styleshout" target="_blank">Tanuja Sangwan</a></li>   
+         </ul>
+
+      </div>
+   </div>
+
+</footer> <!-- Footer End-->
+
+
+<!-- here is the section so that the music controls doesnt cover the footer section -->
+
+<div style="height: 50px;background-color: black;width: 100%;">
+
+
+</div>
+
+
+
+
+
+	
+<!-- js to play a song on click and pause a song on click -->
+<script>
+     var aAudio = new Audio('mexico.mp3');
+     var bAudio = new Audio('good.mp3');
+     var cAudio = new Audio('yaari.mp3');
+     var dAudio = new Audio('na-ja.mp3');
+     var eAudio = new Audio('sakhiyan.mp3');
+      var fAudio = new Audio('badnam.mp3');
+     var gAudio = new Audio('amplifier.mp3');
+     var hAudio = new Audio('gajban.mp3');
+     var iAudio = new Audio('yaar.mp3');
+     var jAudio = new Audio('chetak.mp3');
+     var kAudio = new Audio('desi.mp3');
+     var lAudio = new Audio('black.mp3');
+     var mAudio = new Audio('kisan.mp3');
+     var nAudio = new Audio('baari.mp3');
+      var oAudio = new Audio('patakha.mp3');
+       var pAudio = new Audio('sapne.mp3');
+        var qAudio = new Audio('ammi.mp3');
+        var rAudio = new Audio('bombay.mp3');
+       var sAudio = new Audio('vaste.mp3');
+     function myAudioFunction(letter) {
+         if(letter == 'a') {
+             if (aAudio.paused) aAudio.play();
+             else aAudio.pause();
+         } 
+         if(letter == 'b') {
+             if (bAudio.paused) bAudio.play();
+             else bAudio.pause();
+         }
+         if(letter == 'c') {
+             if (cAudio.paused) cAudio.play();
+             else cAudio.pause();
+         }
+         if(letter == 'd') {
+             if (dAudio.paused) dAudio.play();
+             else dAudio.pause();
+         }
+         if(letter == 'e') {
+             if (eAudio.paused) eAudio.play();
+             else eAudio.pause();
+         }
+         if(letter == 'f') {
+             if (fAudio.paused) fAudio.play();
+             else fAudio.pause();
+         }
+         if(letter == 'g') {
+             if (gAudio.paused) gAudio.play();
+             else gAudio.pause();
+         }
+          if(letter == 'h') {
+             if (hAudio.paused) hAudio.play();
+             else hAudio.pause();
+         }
+         if(letter == 'i') {
+             if (iAudio.paused) iAudio.play();
+             else iAudio.pause();
+         }
+         if(letter == 'j') {
+             if (jAudio.paused) jAudio.play();
+             else jAudio.pause();
+         }
+           if(letter == 'k') {
+             if (kAudio.paused) kAudio.play();
+             else kAudio.pause();
+         }
+         if(letter == 'l') {
+             if (lAudio.paused) lAudio.play();
+             else lAudio.pause();
+         }
+          if(letter == 'm') {
+             if (mAudio.paused) mAudio.play();
+             else mAudio.pause();
+         }
+         if(letter == 'n') {
+             if (nAudio.paused) nAudio.play();
+             else nAudio.pause();
+         }
+         if(letter == 'o') {
+             if (oAudio.paused) oAudio.play();
+             else oAudio.pause();
+         }
+          if(letter == 'p') {
+             if (pAudio.paused) pAudio.play();
+             else pAudio.pause();
+         }
+         if(letter == 'q') {
+             if (qAudio.paused) qAudio.play();
+             else qAudio.pause();
+         }
+         if(letter == 'r') {
+             if (rAudio.paused) rAudio.play();
+             else rAudio.pause();
+         }
+         if(letter == 's') {
+             if (sAudio.paused) sAudio.play();
+             else sAudio.pause();
+         }
+     }
+ </script>
+
+<!-- the code ends here -->
+</BODY>
+
+</HTML>
